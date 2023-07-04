@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/frameLayoutHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomeFragment">
+
+        <ImageView
+            android:id="@+id/imageRadio"
+            android:layout_width="0dp"
+            android:layout_height="225dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="156dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:drawableLeft="@drawable/baseline_play_arrow_24"
+            android:text="ESCUCHAR"
+            app:layout_constraintEnd_toEndOf="@+id/imageRadio"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/imageRadio"
+            app:layout_constraintTop_toBottomOf="@+id/imageRadio" />
+
+        <ImageView
+            android:id="@+id/imageClub90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/buttonPlay"
+            app:layout_constraintStart_toStartOf="@+id/buttonPlay"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPlay"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imagePeloSuelto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageClub90"
+            app:layout_constraintStart_toStartOf="@+id/imageClub90"
+            app:layout_constraintTop_toBottomOf="@+id/imageClub90"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageConexionRetro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/imagePeloSuelto"
+            app:layout_constraintStart_toStartOf="@+id/imagePeloSuelto"
+            app:layout_constraintTop_toBottomOf="@+id/imagePeloSuelto"
+            tools:src="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
