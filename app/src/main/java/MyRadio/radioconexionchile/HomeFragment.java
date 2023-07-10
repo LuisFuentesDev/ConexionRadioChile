@@ -72,6 +72,7 @@ public class HomeFragment extends Fragment {
         View view = binding.getRoot();
 
         imgGlide = binding.imageRadio;
+
         Glide.with(this).load(radioChile).into(imgGlide);
 
         imgGlide = binding.imageClub90;

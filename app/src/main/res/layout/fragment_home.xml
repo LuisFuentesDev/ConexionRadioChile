@@ -11,13 +11,13 @@
 
         android:id="@+id/frameLayoutHome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         tools:context=".HomeFragment">
 
         <ImageView
             android:id="@+id/imageRadio"
-            android:layout_width="0dp"
-            android:layout_height="225dp"
+            android:layout_width="462dp"
+            android:layout_height="230dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -35,21 +35,34 @@
             app:layout_constraintStart_toStartOf="@+id/imageRadio"
             app:layout_constraintTop_toBottomOf="@+id/imageRadio" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="133dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="PROGRAMAS"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/buttonPlay"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="@+id/buttonPlay"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPlay" />
+
         <ImageView
             android:id="@+id/imageClub90"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            app:layout_constraintEnd_toEndOf="@+id/buttonPlay"
-            app:layout_constraintStart_toStartOf="@+id/buttonPlay"
-            app:layout_constraintTop_toBottomOf="@+id/buttonPlay"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
             tools:src="@tools:sample/avatars" />
 
         <ImageView
             android:id="@+id/imagePeloSuelto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="@+id/imageClub90"
             app:layout_constraintStart_toStartOf="@+id/imageClub90"
             app:layout_constraintTop_toBottomOf="@+id/imageClub90"
@@ -57,9 +70,9 @@
 
         <ImageView
             android:id="@+id/imageConexionRetro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="@+id/imagePeloSuelto"
             app:layout_constraintStart_toStartOf="@+id/imagePeloSuelto"
             app:layout_constraintTop_toBottomOf="@+id/imagePeloSuelto"
