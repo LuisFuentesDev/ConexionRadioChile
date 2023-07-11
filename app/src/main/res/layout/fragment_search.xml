@@ -11,6 +11,7 @@
         android:id="@+id/frameLayoutHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFFFFF"
         tools:context=".HomeFragment">
 
 
@@ -20,6 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="SIGUENOS EN NUESTRAS REDES SOCIALES"
+            android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="@+id/textSomosConexion"
             app:layout_constraintStart_toStartOf="@+id/textSomosConexion"
             app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
@@ -35,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonYoutube"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Youtube"
@@ -51,6 +53,7 @@
             android:layout_marginTop="36dp"
             android:gravity="center"
             android:text="Somos Conexión Radio Chile"
+            android:textColor="#000000"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
@@ -61,13 +64,17 @@
             android:id="@+id/textDescripcion"
             android:layout_width="377dp"
             android:layout_height="495dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="200dp"
+            android:layout_marginEnd="8dp"
             android:gravity="center"
+            android:padding="10dp"
             android:text="Bienvenidos a Conexion Radio Chile, una Radio Online que te transportará a través del tiempo con la mejor música de las décadas pasadas. Nuestro objetivo es brindar una experiencia auditiva inigualable, llevando a nuestros oyentes a revivir los éxitos que marcaron una época.  Somos un equipo apasionado por la música y la radio, comprometidos con ofrecer una programación de calidad las 24 horas del día, los 7 días de la semana. Desde los clásicos de los 70s hasta los hits de los 2000, nuestra selección musical está cuidadosamente elegida para satisfacer los gustos más exigentes.  ¡Únete a nosotros y déjate llevar por la nostalgia de las décadas pasadas!"
+            android:textColor="#000000"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@+id/textSomosConexion"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="@+id/textSomosConexion"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
 
         <Button
@@ -75,9 +82,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TikTok"
-            app:layout_constraintBottom_toBottomOf="@+id/button2"
-            app:layout_constraintStart_toEndOf="@+id/button2"
-            app:layout_constraintTop_toTopOf="@+id/button2" />
+            app:layout_constraintBottom_toBottomOf="@+id/buttonYoutube"
+            app:layout_constraintStart_toEndOf="@+id/buttonYoutube"
+            app:layout_constraintTop_toTopOf="@+id/buttonYoutube" />
 
         <Button
             android:id="@+id/buttonWsp"
@@ -90,7 +97,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/buttonInstagram"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

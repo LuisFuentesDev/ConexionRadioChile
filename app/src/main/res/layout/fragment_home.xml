@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,6 +14,7 @@
         android:id="@+id/frameLayoutHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FFFFFF"
         tools:context=".HomeFragment">
 
         <ImageView
@@ -29,7 +32,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="24dp"
             android:drawableLeft="@drawable/baseline_play_arrow_24"
-            android:text="ESCUCHAR"
+            android:text="ENCENDER RADIO"
             app:layout_constraintEnd_toEndOf="@+id/imageRadio"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="@+id/imageRadio"
@@ -42,6 +45,7 @@
             android:layout_marginTop="28dp"
             android:gravity="center"
             android:text="PROGRAMAS"
+            android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/buttonPlay"
             app:layout_constraintHorizontal_bias="0.521"
@@ -137,6 +141,7 @@
             app:layout_constraintStart_toStartOf="@+id/imageSalvoConducto"
             app:layout_constraintTop_toBottomOf="@+id/imageSalvoConducto"
             tools:srcCompat="@tools:sample/avatars" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
