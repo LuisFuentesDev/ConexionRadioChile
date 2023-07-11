@@ -1,5 +1,7 @@
 package MyRadio.radioconexionchile;
 
+import android.media.MediaPlayer;
+import android.media.browse.MediaBrowser;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,9 +9,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+
+import java.io.IOException;
 
 import MyRadio.radioconexionchile.databinding.FragmentHomeBinding;
 
@@ -39,7 +44,6 @@ public class HomeFragment extends Fragment {
     String salvoConducto = "https://conexionradiochile.cl/wp-content/uploads/2023/05/9.png";
 
     String nocheClasicos = "https://conexionradiochile.cl/wp-content/uploads/2023/05/1-1.png";
-
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -79,7 +83,10 @@ public class HomeFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
+
         }
+
     }
 
     @Override
@@ -118,7 +125,23 @@ public class HomeFragment extends Fragment {
         imgGlide = binding.imageNocheClasicos;
         Glide.with(this).load(nocheClasicos).into(imgGlide);
 
-        return view;
-    }
 
+        Button buttonPlay = binding.buttonPlay;
+        buttonPlay.setOnClickListener(view1 -> {
+            String radioStreamingUrl = "https://sonic.streamingchilenos.com/8208/stream";
+
+            MediaPlayer mediaPlayer = new MediaPlayer();
+            try {
+                mediaPlayer.setDataSource(radioStreamingUrl);
+                mediaPlayer.prepare();
+                mediaPlayer.start();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        });
+        return view;
+
+
+    }
 }

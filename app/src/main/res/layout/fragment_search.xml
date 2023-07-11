@@ -1,14 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchFragment">
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayoutHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".HomeFragment">
 
-</FrameLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="SIGUENOS EN NUESTRAS REDES SOCIALES"
+            app:layout_constraintEnd_toEndOf="@+id/textSomosConexion"
+            app:layout_constraintStart_toStartOf="@+id/textSomosConexion"
+            app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
+
+        <Button
+            android:id="@+id/buttonFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="236dp"
+            android:text="facebook"
+            app:layout_constraintEnd_toEndOf="@+id/textSomosConexion"
+            app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Youtube"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonFacebook"
+            app:layout_constraintStart_toEndOf="@+id/buttonFacebook"
+            app:layout_constraintTop_toTopOf="@+id/buttonFacebook"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textSomosConexion"
+            android:layout_width="312dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="Somos Conexión Radio Chile"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textDescripcion"
+            android:layout_width="377dp"
+            android:layout_height="495dp"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:text="Bienvenidos a Conexion Radio Chile, una Radio Online que te transportará a través del tiempo con la mejor música de las décadas pasadas. Nuestro objetivo es brindar una experiencia auditiva inigualable, llevando a nuestros oyentes a revivir los éxitos que marcaron una época.  Somos un equipo apasionado por la música y la radio, comprometidos con ofrecer una programación de calidad las 24 horas del día, los 7 días de la semana. Desde los clásicos de los 70s hasta los hits de los 2000, nuestra selección musical está cuidadosamente elegida para satisfacer los gustos más exigentes.  ¡Únete a nosotros y déjate llevar por la nostalgia de las décadas pasadas!"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textSomosConexion"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/textSomosConexion"
+            app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
+
+        <Button
+            android:id="@+id/buttonTikTok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TikTok"
+            app:layout_constraintBottom_toBottomOf="@+id/button2"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="@+id/button2" />
+
+        <Button
+            android:id="@+id/buttonWsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wsp"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonTikTok"
+            app:layout_constraintStart_toEndOf="@+id/buttonTikTok"
+            app:layout_constraintTop_toTopOf="@+id/buttonTikTok"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Instagram"
+            app:layout_constraintEnd_toEndOf="@+id/buttonFacebook"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/buttonFacebook"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFacebook" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
