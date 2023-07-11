@@ -22,9 +22,25 @@ public class HomeFragment extends Fragment {
 
     ImageView imgGlide;
     String radioChile = "https://i.postimg.cc/0yTTs0Tr/conexion-Radio-Chile.png";
-    String club90 = "https://i.postimg.cc/4dLwJJYw/club90.png";
-    String peloSuelto = "https://i.postimg.cc/Bn20tzc2/pelosuelto.png";
+    String club90 = "https://conexionradiochile.cl/wp-content/uploads/2023/05/2.png";
+
+    String peloSuelto = "https://conexionradiochile.cl/wp-content/uploads/2023/05/3.png";
+
+    String cancionesLejanas = "https://conexionradiochile.cl/wp-content/uploads/2023/05/4.png";
+
     String conexionRetro = "https://i.postimg.cc/7ZcrskPv/conexionretro.png";
+
+    String flasBack = "https://conexionradiochile.cl/wp-content/uploads/2023/05/6.png";
+
+    String superCanciones = "https://conexionradiochile.cl/wp-content/uploads/2023/05/7.png";
+
+    String rememberTime = "https://conexionradiochile.cl/wp-content/uploads/2023/05/8.png";
+
+    String salvoConducto = "https://conexionradiochile.cl/wp-content/uploads/2023/05/9.png";
+
+    String nocheClasicos = "https://conexionradiochile.cl/wp-content/uploads/2023/05/1-1.png";
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -81,8 +97,26 @@ public class HomeFragment extends Fragment {
         imgGlide = binding.imagePeloSuelto;
         Glide.with(this).load(peloSuelto).into(imgGlide);
 
+        imgGlide = binding.imageCancionesLejanas;
+        Glide.with(this).load(cancionesLejanas).into(imgGlide);
+
         imgGlide = binding.imageConexionRetro;
         Glide.with(this).load(conexionRetro).into(imgGlide);
+
+        imgGlide = binding.imageFlashBack;
+        Glide.with(this).load(flasBack).into(imgGlide);
+
+        imgGlide = binding.imageSuperCanciones;
+        Glide.with(this).load(superCanciones).into(imgGlide);
+
+        imgGlide = binding.imageRememberTime;
+        Glide.with(this).load(rememberTime).into(imgGlide);
+
+        imgGlide = binding.imageSalvoConducto;
+        Glide.with(this).load(salvoConducto).into(imgGlide);
+
+        imgGlide = binding.imageNocheClasicos;
+        Glide.with(this).load(nocheClasicos).into(imgGlide);
 
         return view;
     }

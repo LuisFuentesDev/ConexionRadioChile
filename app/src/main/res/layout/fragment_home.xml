@@ -69,7 +69,7 @@
             tools:src="@tools:sample/avatars" />
 
         <ImageView
-            android:id="@+id/imageConexionRetro"
+            android:id="@+id/imageCancionesLejanas"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_marginTop="16dp"
@@ -77,6 +77,66 @@
             app:layout_constraintStart_toStartOf="@+id/imagePeloSuelto"
             app:layout_constraintTop_toBottomOf="@+id/imagePeloSuelto"
             tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageConexionRetro"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageCancionesLejanas"
+            app:layout_constraintStart_toStartOf="@+id/imageCancionesLejanas"
+            app:layout_constraintTop_toBottomOf="@+id/imageCancionesLejanas"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageFlashBack"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageConexionRetro"
+            app:layout_constraintStart_toStartOf="@+id/imageConexionRetro"
+            app:layout_constraintTop_toBottomOf="@+id/imageConexionRetro"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageSuperCanciones"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageFlashBack"
+            app:layout_constraintStart_toStartOf="@+id/imageFlashBack"
+            app:layout_constraintTop_toBottomOf="@+id/imageFlashBack"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageRememberTime"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageSuperCanciones"
+            app:layout_constraintStart_toStartOf="@+id/imageSuperCanciones"
+            app:layout_constraintTop_toBottomOf="@+id/imageSuperCanciones"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageSalvoConducto"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageRememberTime"
+            app:layout_constraintStart_toStartOf="@+id/imageRememberTime"
+            app:layout_constraintTop_toBottomOf="@id/imageRememberTime"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageNocheClasicos"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageSalvoConducto"
+            app:layout_constraintStart_toStartOf="@+id/imageSalvoConducto"
+            app:layout_constraintTop_toBottomOf="@+id/imageSalvoConducto"
+            tools:srcCompat="@tools:sample/avatars" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
