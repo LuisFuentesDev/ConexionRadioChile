@@ -7,6 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+
+import MyRadio.radioconexionchile.databinding.FragmentExploreBinding;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +19,25 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class ExploreFragment extends Fragment {
+    ImageView imgGlide;
+
+    String club90 = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-3.png";
+
+    String peloSuelto = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-2.png";
+
+    String cancionesLejanas = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-6.png";
+
+    String conexionRetro = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-7.png";
+
+    String flasBack = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-8.png";
+
+    String superCanciones = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-9.png";
+
+    String rememberTime = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-10.png";
+
+    String salvoConducto = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-11.png";
+
+    String nocheClasicos = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-12.png";
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -56,9 +80,38 @@ public class ExploreFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        FragmentExploreBinding binding = FragmentExploreBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
 
-        return inflater.inflate(R.layout.fragment_explore, container, false);
+        imgGlide = binding.imageClub90;
+        Glide.with(this).load(club90).into(imgGlide);
+
+        imgGlide = binding.imagePeloSuelto;
+        Glide.with(this).load(peloSuelto).into(imgGlide);
+
+        imgGlide = binding.imageCancionesLejanas;
+        Glide.with(this).load(cancionesLejanas).into(imgGlide);
+
+        imgGlide = binding.imageConexionRetro;
+        Glide.with(this).load(conexionRetro).into(imgGlide);
+
+        imgGlide = binding.imageFlashBack;
+        Glide.with(this).load(flasBack).into(imgGlide);
+
+        imgGlide = binding.imageSuperCanciones;
+        Glide.with(this).load(superCanciones).into(imgGlide);
+
+        imgGlide = binding.imageRememberTime;
+        Glide.with(this).load(rememberTime).into(imgGlide);
+
+        imgGlide = binding.imageSalvoConducto;
+        Glide.with(this).load(salvoConducto).into(imgGlide);
+
+        imgGlide = binding.imageNocheClasicos;
+        Glide.with(this).load(nocheClasicos).into(imgGlide);
+
+        return view;
     }
+
 }

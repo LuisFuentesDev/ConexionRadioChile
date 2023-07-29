@@ -8,12 +8,48 @@
     tools:ignore="SpeakableTextPresentCheck">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/frameLayoutHome"
+        android:id="@+id/frameLayoutExplore"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
         tools:context=".HomeFragment">
 
+
+        <ImageView
+            android:id="@+id/imageWsp"
+            android:layout_width="57dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageInstagram"
+            app:layout_constraintTop_toTopOf="@+id/imageInstagram"
+            app:srcCompat="@drawable/wsp" />
+
+        <ImageView
+            android:id="@+id/imageInstagram"
+            android:layout_width="57dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageTiktok"
+            app:layout_constraintTop_toTopOf="@+id/imageTiktok"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/imageTiktok"
+            android:layout_width="57dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageYoutube"
+            app:layout_constraintTop_toTopOf="@+id/imageYoutube"
+            app:srcCompat="@drawable/tiktok" />
+
+        <ImageView
+            android:id="@+id/imageYoutube"
+            android:layout_width="57dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageFacebook"
+            app:layout_constraintTop_toTopOf="@+id/imageFacebook"
+            app:srcCompat="@drawable/youtube" />
 
         <TextView
             android:id="@+id/textView4"
@@ -25,26 +61,6 @@
             app:layout_constraintEnd_toEndOf="@+id/textSomosConexion"
             app:layout_constraintStart_toStartOf="@+id/textSomosConexion"
             app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
-
-        <Button
-            android:id="@+id/buttonFacebook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="76dp"
-            android:layout_marginEnd="236dp"
-            android:text="facebook"
-            app:layout_constraintEnd_toEndOf="@+id/textSomosConexion"
-            app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
-
-        <Button
-            android:id="@+id/buttonYoutube"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Youtube"
-            app:layout_constraintBottom_toBottomOf="@+id/buttonFacebook"
-            app:layout_constraintStart_toEndOf="@+id/buttonFacebook"
-            app:layout_constraintTop_toTopOf="@+id/buttonFacebook"
-            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/textSomosConexion"
@@ -77,34 +93,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
 
-        <Button
-            android:id="@+id/buttonTikTok"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TikTok"
-            app:layout_constraintBottom_toBottomOf="@+id/buttonYoutube"
-            app:layout_constraintStart_toEndOf="@+id/buttonYoutube"
-            app:layout_constraintTop_toTopOf="@+id/buttonYoutube" />
-
-        <Button
-            android:id="@+id/buttonWsp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wsp"
-            app:layout_constraintBottom_toBottomOf="@+id/buttonTikTok"
-            app:layout_constraintStart_toEndOf="@+id/buttonTikTok"
-            app:layout_constraintTop_toTopOf="@+id/buttonTikTok"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Button
-            android:id="@+id/buttonInstagram"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Instagram"
-            app:layout_constraintEnd_toEndOf="@+id/buttonFacebook"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/buttonFacebook"
-            app:layout_constraintTop_toBottomOf="@+id/buttonFacebook" />
+        <ImageView
+            android:id="@+id/imageFacebook"
+            android:layout_width="57dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="164dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/facebook" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

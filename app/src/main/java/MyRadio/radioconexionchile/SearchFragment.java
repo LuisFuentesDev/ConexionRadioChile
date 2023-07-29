@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import MyRadio.radioconexionchile.databinding.FragmentSearchBinding;
 
@@ -65,41 +66,42 @@ public class SearchFragment extends Fragment {
         FragmentSearchBinding binding = FragmentSearchBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
-        Button buttonFacebook = binding.buttonFacebook;
-        Button buttonYoutube = binding.buttonYoutube;
-        Button buttonTikTok = binding.buttonTikTok;
-        Button buttonInstagram = binding.buttonInstagram;
-        Button buttonWsp = binding.buttonWsp;
+        ImageView imageFacebook = binding.imageFacebook;
+        ImageView imageYoutube = binding.imageYoutube;
+        ImageView imageTikTok = binding.imageTiktok;
+        ImageView imageInstagram = binding.imageInstagram;
+        ImageView imageWsp = binding.imageWsp;
 
-        buttonFacebook.setOnClickListener(v -> {
+        imageFacebook.setOnClickListener(v -> {
             String facebookUrl = "https://www.facebook.com/conexionRadiochile?locale=es_ES%2F&_rdc=1&_rdr";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(facebookUrl));
             startActivity(intent);
         });
 
-        buttonYoutube.setOnClickListener(v -> {
+        imageYoutube.setOnClickListener(v -> {
             String youtubeUrl = "https://www.youtube.com/channel/UClm-Qr-2UbrDzc0fnnnwLwA";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeUrl));
             startActivity(intent);
         });
 
-        buttonTikTok.setOnClickListener(v -> {
+        imageTikTok.setOnClickListener(v -> {
             String tikTokkUrl = "https://www.tiktok.com/@conexionradiochile";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(tikTokkUrl));
             startActivity(intent);
         });
 
-        buttonWsp.setOnClickListener(v -> {
-            String wspUrl = "https://api.whatsapp.com/send/?phone=56920766599&text&type=phone_number&app_absent=0";
+        imageInstagram.setOnClickListener(v -> {
+            String wspUrl = "https://www.instagram.com/conexion_radiochile/";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(wspUrl));
             startActivity(intent);
         });
 
-        buttonInstagram.setOnClickListener(v -> {
-            String instagramUrl = "https://www.instagram.com/conexion_radiochile/";
+        imageWsp.setOnClickListener(v -> {
+            String instagramUrl = "https://api.whatsapp.com/send/?phone=56920766599&text&type=phone_number&app_absent=0";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(instagramUrl));
             startActivity(intent);
         });
+
 
         return view;
     }

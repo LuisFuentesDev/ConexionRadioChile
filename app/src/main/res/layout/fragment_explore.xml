@@ -1,14 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExploreFragment">
+    tools:ignore="SpeakableTextPresentCheck"
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/frameLayoutExplore"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="explorar fragmento" />
+        android:background="#FFFFFF"
+        tools:context=".HomeFragment">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="329dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="32dp"
+            android:text="CATEGORIAS"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.329"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="70's a 90's"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/imageClub90"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageNocheClasicos"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageClub90"
+            app:layout_constraintStart_toStartOf="@+id/imageClub90"
+            app:layout_constraintTop_toBottomOf="@+id/imageClub90"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageRememberTime"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageNocheClasicos"
+            app:layout_constraintStart_toStartOf="@+id/imageNocheClasicos"
+            app:layout_constraintTop_toBottomOf="@+id/imageNocheClasicos"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="70's a 2000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageRememberTime"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/imageRememberTime"
+            app:layout_constraintTop_toBottomOf="@+id/imageRememberTime" />
+
+        <ImageView
+            android:id="@+id/imageConexionRetro"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageCancionesLejanas"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageConexionRetro"
+            app:layout_constraintStart_toStartOf="@+id/imageConexionRetro"
+            app:layout_constraintTop_toBottomOf="@+id/imageConexionRetro"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="80's a 2000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageCancionesLejanas"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@+id/imageCancionesLejanas"
+            app:layout_constraintTop_toBottomOf="@+id/imageCancionesLejanas" />
+
+        <ImageView
+            android:id="@+id/imageSuperCanciones"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageFlashBack"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageSuperCanciones"
+            app:layout_constraintStart_toStartOf="@+id/imageSuperCanciones"
+            app:layout_constraintTop_toBottomOf="@+id/imageSuperCanciones"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageSalvoConducto"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageFlashBack"
+            app:layout_constraintStart_toStartOf="@+id/imageFlashBack"
+            app:layout_constraintTop_toBottomOf="@id/imageFlashBack"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imagePeloSuelto"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageSalvoConducto"
+            app:layout_constraintStart_toStartOf="@+id/imageSalvoConducto"
+            app:layout_constraintTop_toBottomOf="@+id/imageSalvoConducto"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

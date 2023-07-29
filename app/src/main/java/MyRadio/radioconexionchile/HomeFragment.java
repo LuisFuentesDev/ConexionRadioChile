@@ -32,23 +32,23 @@ public class HomeFragment extends Fragment {
 
     ImageView imgGlide;
     String radioChile = "https://i.postimg.cc/0yTTs0Tr/conexion-Radio-Chile.png";
-    String club90 = "https://conexionradiochile.cl/wp-content/uploads/2023/05/2.png";
+    String club90 = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-3.png";
 
-    String peloSuelto = "https://conexionradiochile.cl/wp-content/uploads/2023/05/3.png";
+    String peloSuelto = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-2.png";
 
-    String cancionesLejanas = "https://conexionradiochile.cl/wp-content/uploads/2023/05/4.png";
+    String cancionesLejanas = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-6.png";
 
-    String conexionRetro = "https://i.postimg.cc/7ZcrskPv/conexionretro.png";
+    String conexionRetro = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-7.png";
 
-    String flasBack = "https://conexionradiochile.cl/wp-content/uploads/2023/05/6.png";
+    String flasBack = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-8.png";
 
-    String superCanciones = "https://conexionradiochile.cl/wp-content/uploads/2023/05/7.png";
+    String superCanciones = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-9.png";
 
-    String rememberTime = "https://conexionradiochile.cl/wp-content/uploads/2023/05/8.png";
+    String rememberTime = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-10.png";
 
-    String salvoConducto = "https://conexionradiochile.cl/wp-content/uploads/2023/05/9.png";
+    String salvoConducto = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-11.png";
 
-    String nocheClasicos = "https://conexionradiochile.cl/wp-content/uploads/2023/05/1-1.png";
+    String nocheClasicos = "https://conexionradiochile.cl/wp-content/uploads/2023/07/LUNES-A-VIERNES-1200-HORAS-12.png";
 
 
     // TODO: Rename parameter arguments, choose names that match
