@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
 
             bottomNavigationView.setBackgroundColor(Color.parseColor("#4E2593")); // Barra de navegacion
-            getWindow().setNavigationBarColor(Color.parseColor("#000000")); // Barra Inferior
-            getWindow().setStatusBarColor(Color.parseColor("#4E2593")); // Barra superior
+            getWindow().setNavigationBarColor(Color.parseColor("#000000")); // Barra botones inferior
+            getWindow().setStatusBarColor(Color.parseColor("#4E2593")); // Barra de estado
 
             return true;
         });

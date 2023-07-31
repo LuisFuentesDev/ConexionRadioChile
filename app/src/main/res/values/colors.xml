@@ -2,5 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="color_pressed">#5C3B95</color>
+    <color name="color_focused">#5C3B95</color>
     <color name="colorToolbarDark">#000000</color>
 </resources>
