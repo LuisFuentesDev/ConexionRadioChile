@@ -19,88 +19,112 @@
             android:id="@+id/imageWsp"
             android:layout_width="57dp"
             android:layout_height="59dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintStart_toEndOf="@+id/imageInstagram"
+            android:layout_marginStart="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
             app:layout_constraintTop_toTopOf="@+id/imageInstagram"
-            app:srcCompat="@drawable/wsp" />
+            app:srcCompat="@drawable/wasap" />
 
         <ImageView
             android:id="@+id/imageInstagram"
             android:layout_width="57dp"
             android:layout_height="59dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintStart_toEndOf="@+id/imageTiktok"
-            app:layout_constraintTop_toTopOf="@+id/imageTiktok"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:srcCompat="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/imageTiktok"
             android:layout_width="57dp"
             android:layout_height="59dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintStart_toEndOf="@+id/imageYoutube"
-            app:layout_constraintTop_toTopOf="@+id/imageYoutube"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:srcCompat="@drawable/tiktok" />
 
         <ImageView
             android:id="@+id/imageYoutube"
             android:layout_width="57dp"
             android:layout_height="59dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintStart_toEndOf="@+id/imageFacebook"
-            app:layout_constraintTop_toTopOf="@+id/imageFacebook"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.257"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:srcCompat="@drawable/youtube" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
             android:text="SIGUENOS EN NUESTRAS REDES SOCIALES"
             android:textColor="#000000"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="@+id/textSomosConexion"
             app:layout_constraintStart_toStartOf="@+id/textSomosConexion"
             app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
 
         <TextView
             android:id="@+id/textSomosConexion"
-            android:layout_width="312dp"
+            android:layout_width="wrap_content"
             android:layout_height="61dp"
             android:layout_marginTop="36dp"
             android:gravity="center"
             android:text="Somos Conexión Radio Chile"
             android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="26sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textDescripcion"
-            android:layout_width="377dp"
-            android:layout_height="495dp"
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="Bienvenidos a Conexion Radio Chile, una Radio Online que te transportará a través del tiempo con la mejor música de las décadas pasadas. Nuestro objetivo es brindar una experiencia auditiva inigualable, llevando a nuestros oyentes a revivir los éxitos que marcaron una época.  Somos un equipo apasionado por la música y la radio, comprometidos con ofrecer una programación de calidad las 24 horas del día, los 7 días de la semana. Desde los clásicos de los 70s hasta los hits de los 2000, nuestra selección musical está cuidadosamente elegida para satisfacer los gustos más exigentes.  ¡Únete a nosotros y déjate llevar por la nostalgia de las décadas pasadas!"
-            android:textColor="#000000"
-            android:textSize="20sp"
+            android:backgroundTint="#FDFDFD"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textSomosConexion" />
+            app:layout_constraintTop_toBottomOf="@+id/imageTiktok">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textDescripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Bienvenidos a Conexion Radio Chile, una Radio Online que te transportará a través del tiempo con la mejor música de las décadas pasadas. Nuestro objetivo es brindar una experiencia auditiva inigualable, llevando a nuestros oyentes a revivir los éxitos que marcaron una época.  Somos un equipo apasionado por la música y la radio, comprometidos con ofrecer una programación de calidad las 24 horas del día, los 7 días de la semana. Desde los clásicos de los 70s hasta los hits de los 2000, nuestra selección musical está cuidadosamente elegida para satisfacer los gustos más exigentes.  ¡Únete a nosotros y déjate llevar por la nostalgia de las décadas pasadas!"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
         <ImageView
             android:id="@+id/imageFacebook"
             android:layout_width="57dp"
             android:layout_height="59dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="164dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="52dp"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:srcCompat="@drawable/facebook" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

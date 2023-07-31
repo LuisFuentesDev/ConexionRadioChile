@@ -1,7 +1,14 @@
 package MyRadio.radioconexionchile;
 
+import static androidx.core.content.ContextCompat.getSystemService;
+
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.media.browse.MediaBrowser;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -19,6 +26,8 @@ import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import MyRadio.radioconexionchile.databinding.FragmentHomeBinding;
@@ -82,6 +91,11 @@ public class HomeFragment extends Fragment {
         return fragment;
     }
 
+    private void startRadioService() {
+        Intent serviceIntent = new Intent(requireContext(), RadioService.class);
+        requireContext().startService(serviceIntent);
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,9 +103,7 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
 
-
         }
-
     }
 
     @Override
@@ -132,14 +144,17 @@ public class HomeFragment extends Fragment {
 
 
         Button buttonPlay = binding.buttonPlay;
+
         SimpleExoPlayer player = new SimpleExoPlayer.Builder(requireContext()).build();
 
         buttonPlay.setOnClickListener(buttonView -> {
+            startRadioService();
             String radioStreamingUrl = "https://sonic.streamingchilenos.com/8208/stream";
             MediaItem mediaItem = MediaItem.fromUri(radioStreamingUrl);
             player.setMediaItem(mediaItem);
             player.prepare();
             player.play();
+
         });
 
         return view;

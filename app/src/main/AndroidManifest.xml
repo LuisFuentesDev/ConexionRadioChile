@@ -3,16 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/portada"
-        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Conexion Radio Chile"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RadioConexionChile"
+        android:theme="@style/Base.Theme.RadioConexionChile"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
@@ -23,6 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Declaración del servicio RadioService -->
+        <service
+            android:name="MyRadio.radioconexionchile.RadioService"
+            android:enabled="true"
+            android:exported="false" />
 
     </application>
 

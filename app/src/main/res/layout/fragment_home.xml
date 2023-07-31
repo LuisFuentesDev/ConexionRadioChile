@@ -19,20 +19,23 @@
 
         <ImageView
             android:id="@+id/imageRadio"
-            android:layout_width="462dp"
-            android:layout_height="230dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@tools:sample/avatars" />
 
         <Button
             android:id="@+id/buttonPlay"
-            android:layout_width="156dp"
+            android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:layout_marginTop="24dp"
-            android:drawableLeft="@drawable/baseline_play_arrow_24"
+            android:backgroundTint="#4E2593"
+            android:drawableLeft="@drawable/baseline_play_arrow_2"
             android:text="ENCENDER RADIO"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="@+id/imageRadio"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="@+id/imageRadio"
@@ -40,13 +43,13 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="133dp"
-            android:layout_height="33dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:gravity="center"
             android:text="PROGRAMAS"
             android:textColor="#000000"
-            android:textSize="20sp"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="@+id/buttonPlay"
             app:layout_constraintHorizontal_bias="0.521"
             app:layout_constraintStart_toStartOf="@+id/buttonPlay"
